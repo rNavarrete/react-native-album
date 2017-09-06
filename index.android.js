@@ -1,10 +1,15 @@
 // index.android.js place android code in here
 // Import a library to help create a component
 import React from 'react';
-import { Text, AppRegistry } from 'react-native';
+import { AppRegistry, View } from 'react-native';
+import Header from './src/components/header';
+import AlbumList from './src/components/AlbumList';
 // Create a component
 const App = () => (
-    <Text>Some Text</Text>
+  <View>
+    <Header headerText={'Albums'} />
+    <AlbumList />
+  </View>
   );
 
 // Render it to the device
